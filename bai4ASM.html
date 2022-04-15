@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>bài 4 ps21766 trần quốc trung</title>
+  <link rel="stylesheet" href="bai4ASM.css">
+</head>
+
+<body>
+  <div class="container">
+    <form action="" onsubmit="event.preventDefault()">
+      <div class="header">
+        <p id="head">ĐĂNG KÝ THÀNH VIÊN</p>
+      </div>
+      <div class="content">
+        <div class="blockId">
+          <p class="label">Mã sinh viên</p>
+          <input type="text" name="" id="inputIdSV" required />
+        </div>
+        <div class="blockName">
+          <p class="label">Họ và tên</p>
+          <input type="text" name="" id="inputNameSV" required />
+        </div>
+        <div class="blockEmail">
+          <p class="label">Email</p>
+          <input type="email" name="" id="inputEmail" required />
+        </div>
+        <div class="blockGender">
+          <p class="label">Giới tính</p>
+          <div class="inputGender">
+            <input type="radio" name="gender" id="male" required /><label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" required /><label for="female">Nữ</label>
+          </div>
+        </div>
+        <div class="blockFavor">
+          <p class="label">Sở thích</p>
+          <div class="inputFavor">
+            <input type="checkbox" name="favor" id="read" /><label for="read">Đọc sách</label>
+            <input type="checkbox" name="favor" id="travel" /><label for="travel">Du lịch</label>
+            <input type="checkbox" name="favor" id="music" /><label for="music">Âm nhạc</label>
+            <input type="checkbox" name="favor" id="cook" /><label for="cook">Ẩm thực</label>
+            <input type="checkbox" name="favor" id="other" /><label for="other">Khác</label>
+          </div>
+        </div>
+        <div class="blockNationality">
+          <p class="label">Quốc tịch</p>
+          <div class="inputNationality">
+            <input list="nationalities" name="nationality" id="nationality" placeholder="Chọn quốc gia" required />
+            <datalist id="nationalities">
+              <option value="Anh"></option>
+              <option value="Đức"></option>
+              <option value="Pháp"></option>
+              <option value="Ý"></option>
+              <option value="Việt Nam"></option>
+            </datalist>
+          </div>
+        </div>
+        <div class="blockNote">
+          <p class="label">Ghi chú</p>
+          <textarea name="note" id="note" cols="30" rows="3"></textarea>
+        </div>
+        <a href="index.html">
+        <input type="button" value="Đăng ký" id="btn" onclick="checkValidate()" />
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <script src="bai4ASM.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+
+  body {
+    background-size: cover;
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 450px;
+    height: 550px;
+    margin-top: 25px;
+    font-size: 15px;
+  }
+  
+  #head {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .blockId,
+  .blockName,
+  .blockEmail,
+  .blockGender,
+  .blockFavor,
+  .blockNationality,
+  .blockNote {
+    margin-bottom: 10px;
+  }
+  
+  #inputIdSV,
+  #inputNameSV,
+  #inputEmail,
+  .inputGender,
+  .inputFavor,
+  #nationality,
+  #note {
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    width: 400px;
+    line-height: 30px;
+    padding-left: 10px;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+  }
+  
+  .inputGender label,
+  .inputFavor label {
+    padding: 0 5px;
+  }
+  
+  .label {
+    padding-bottom: 5px;
+  }
+  
+  #note {
+    line-height: 15px;
+    font-family: sans-serif;
+    padding-top: 5px;
+    max-width: 400px;
+  }
+  
+  #btn {
+    width: 100px;
+    height: 30px;
+    border-style: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    background-image: radial-gradient(white 20%, gray);
+  }
+  
+  #btn:hover {
+    background-image: radial-gradient(gray 20%, white);
+    color: aliceblue;
+  }
+  

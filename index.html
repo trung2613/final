@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="giohang.css">
+</head>
+
+<body>
+    <a href="giohang.html"> <img src="https://hybrismedianonprods1.blob.core.windows.net/sys-master-phoenix-images-container/h6c/h6b/9559620911134/razer-ths-logo.svg" 
+        width="50px" >
+        </a>
+    <div class="giohang">
+        <a onclick="showcart();"><img src="img/cart.png"><span id="countsp">0</span></a>
+    </div>
+    <div id="showcart">
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+            </tr>
+            <tbody id="mycart">
+
+            </tbody>
+            <tr>
+                <td><a href="chotdon.html"><button type="button" class="thanhtoan">Chốt đơn và thanh toán</button></a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1> SIÊU THỊ TRỰC TUYẾN</h1>
+        </div>
+
+        <div class="row mb menu">
+            <ul>
+                <li><a href="giohang.html">Trang chủ</a></li>
+                <li><a href="#">Giỏ hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+                <li><a href="bai4ASM.html">Đăng ký</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="row">
+                <div class="banner mb">
+                    <img src="img/razerstore-live-11-hero-desktop.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="boxsp mr">
+                    <div class="row img"><img src="img/1 razer.jpg" alt=""></div>
+                    <p>$<span>39</span></p>
+                    <a href="#"  >Razer lakalu</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="img/2.jpg" alt=""></div>
+                    <p>$<span>119</span></p>
+                    <a href="#">Razer Kraken X - Black </a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="img/3.jpg" alt=""></div>
+                    <p>$<span>99</span></p>
+                    <a href="#">Razer Kraken V3 X USB</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="img/4.jpg" alt=""></div>
+                    <p>$<span>229</span></p>
+                    <a href="#">Razer Kraken Kitty Chroma Black
+                    </a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="img/5.webp" alt=""></div>
+                    <p>$<span>119</span></p>
+                    <a href="#">Razer Hammerhead True Wireless Earbuds</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="img/6.png" alt=""></div>
+                    <p>$<span>99</span></p>
+                    <a href="#">Razer Kraken Tournament - Green</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="img/7.webp" alt=""></div>
+                    <p>$<span>119</span></p>
+                    <a href="#">Razer BlackShark V2</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="img/8.webp" alt=""></div>
+                    <p>$<span>299</span></p>
+                    <a href="#">Razer Kraken Kitty Chroma Quartz</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="img/9.jpg" alt=""></div>
+                    <p>$<span>109</span></p>
+                    <a href="#">Razer Kraken X Mercury</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="giohang.js"></script>
+    <script>
+        document.getElementById("showcart").style.display="none";
+    </script>
+    
+</body>
+
+</html>
